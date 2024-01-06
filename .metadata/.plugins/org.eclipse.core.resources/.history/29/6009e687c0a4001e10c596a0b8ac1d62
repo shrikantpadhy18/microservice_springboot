@@ -1,0 +1,5 @@
+package com.question.questionService.entities;
+
+public class Question {
+
+}

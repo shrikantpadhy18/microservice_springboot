@@ -1,0 +1,5 @@
+package com.quiz.entitities;
+
+public class Quiz {
+
+}

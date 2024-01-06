@@ -1,0 +1,14 @@
+package com.question.questionService.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.question.questionService.services.QuestionService;
+
+@RestController
+@RequestMapping("/question")
+public class QuestionController {
+	
+	private QuestionService questionService;
+	
+}

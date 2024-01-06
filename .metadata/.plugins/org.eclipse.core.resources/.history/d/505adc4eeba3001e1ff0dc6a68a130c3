@@ -1,0 +1,6 @@
+package entitities;
+
+public class Quiz {
+	private long id;
+	private String title;
+}

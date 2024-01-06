@@ -1,0 +1,8 @@
+package com.question.questionService.controller;
+
+
+@RestController
+public class QuestionController {
+	
+	
+}

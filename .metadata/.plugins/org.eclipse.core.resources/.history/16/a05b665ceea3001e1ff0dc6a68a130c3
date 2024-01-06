@@ -1,0 +1,21 @@
+package com.quiz.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.quiz.service.QuizService;
+
+@RestController
+@RequestMapping("/quiz")
+public class QuizController {
+	
+	private QuizService quizService;
+	
+	public QuizController(QuizService quizService) {
+		this.quizService=quizService;
+	}
+	
+	public Quiz create(@RequestBody Quiz quiz) {
+		return quizService.add(quiz);
+	}
+}

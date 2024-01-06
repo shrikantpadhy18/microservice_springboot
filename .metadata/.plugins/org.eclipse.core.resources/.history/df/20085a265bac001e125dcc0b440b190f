@@ -1,0 +1,17 @@
+package com.quiz.service;
+
+import com.quiz.entitities.*;
+
+import java.util.List;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@FeignClient(url = "http://localhost:8082",value = "Question-Client")
+public interface QuestionClient {
+	//
+	
+	@GetMapping("/question/{quiz}")
+	List<Question> getQuestionOfQuiz();
+
+}
